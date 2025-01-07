@@ -16,7 +16,7 @@ timezone: Asia/Makassar
 
 title: ARSYA'S PORTFOLIO # the main title
 
-tagline: Saya suka Makan semangka # it will display as the subtitle
+tagline: Saya Mahasiswa # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
