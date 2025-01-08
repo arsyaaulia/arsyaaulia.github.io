@@ -1,11 +1,16 @@
 ---
-title: My first Posting
+media_subpath: /assets/media
+---
+title: Design Sosial Media
 date: 2024-11-11
-categories: blog
-tags: [TAG]     # TAG names should always be lowercase
+categories: Design Project
+tags: [project]     # TAG names should always be lowercase
 ---
 
 
-## My First Posting Liat
 
-Hello my name  Arsya Hay
+Halo
+
+## Informatics Student Union
+
+Bertanggung jawab mendesain untuk kebutuhan organisasi seperti sosial media dan event.  
