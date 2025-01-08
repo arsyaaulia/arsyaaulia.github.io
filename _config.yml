@@ -19,7 +19,7 @@ title: Arsya Aulia Amira # the main title
 tagline: Portfolio # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Portfolio Arsya Aulia Amira 
+  Saya adalah mahasiswi Informatika di Universitas Ciputra Makassar dengan minat besar pada desain grafis. Saat ini, saya mengembangkan keterampilan saya di bidang tersebut melalui pengalaman sebagai anggota divisi media di organisasi ISU dan GDG. Saya percaya dengan kombinasi pemahaman teknologi dan kreativitas visual, saya dapat berkontribusi pada berbagai proyek inovatif.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -34,8 +34,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Arsya Aulia Amira
+  email: arsya1522@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
