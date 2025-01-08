@@ -16,7 +16,8 @@ timezone: Asia/Makassar
 
 title: Arsya Aulia Amira # the main title
 
-tagline: Portfolio # it will display as the subtitle
+tagline: Hello! Welcome to Arsya's Portfolio!
+ # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Saya adalah mahasiswi Informatika di Universitas Ciputra Makassar dengan minat besar pada desain grafis. Saat ini, saya mengembangkan keterampilan saya di bidang tersebut melalui pengalaman sebagai anggota divisi media di organisasi ISU dan GDG. Saya percaya dengan kombinasi pemahaman teknologi dan kreativitas visual, saya dapat berkontribusi pada berbagai proyek inovatif.
@@ -28,7 +29,7 @@ url: "https://arsyaaulia.github.io"
 github:
   username: github_username # change to your GitHub username
 
-twitter:
+instagram:
   username: twitter_username # change to your Twitter username
 
 social:
