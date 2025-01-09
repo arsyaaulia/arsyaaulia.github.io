@@ -1,7 +1,7 @@
 ---
 title: My Project
 date: 2024-11-11
-categories: Design Project
+categories: [Design_Project]
 tags: [project]     # TAG names should always be lowercase
 media_subpath: /assets/media/
 description: 
@@ -11,16 +11,19 @@ Sebagai mahasiswi yang memiliki minat dan hobi di bidang kreatif, saya tidak ing
 
 ## Informatics Student Union
 Informatic Student Union merupakan salah satu organisasi Himpunan Mahasiswa Informatika di Universitas Ciputra Makassar. Di organisasi ini saya bertanggung jawab dalam pembuatan desain untuk kebutuhan organisasi seperti konten sosial media dan kebutuhan event seperti sertifikat, kartu permainan, dan lain lain. Berikut beberapa projek yang saya buat selama di organisasi ini.
-![desain1](/D103 Detective's Luck Depan.png)
-_What's Wrong_
+
+![desain1](/CardSkill.png){: width="600"}
+_Kartu Permainan untuk Kebutuhan Event 12th NPLC_
 
 
 ## Google Developers On Campuss Universitas Ciputra Makassar
 Google Developers on Campus merupakan salah satu organisasi google yang dikhususkan untuk kampus. Saat ini saya belum memiliki banyak projek yang dihasilkan dari organisasi ini, projek kerja yang dijalankan masih sedikit. Berikut projek yang saya buat di organisasi ini.
 
 ## Personal Project
-Tidak hanya mengembangkan skill di organisasi, saat ada waktu yang cukup luang saya suka membuat desain.
-![desain3](/What’s Wrong.png){: width = "70" height="40" }
+Tidak hanya mengembangkan skill di organisasi, saat ada waktu yang cukup luang saya suka membuat desain. Berikut beberapa desain yang saya buat selama waktu luang.
+
+![desain3](/What’s Wrong.png){: width="300" height="300"}
 _What's Wrong_
-![desain2](/Solo game.png)
+
+![desain2](/Solo game.png){: width="300"}
 _Papan Penanda Permainan untuk kebutuhan event_
