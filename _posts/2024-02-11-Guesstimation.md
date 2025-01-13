@@ -9,12 +9,6 @@ description: Guesstimation adalah proyek game berbasis terminal yang dirancang u
 ## Tentang Guesstimation
 Guesstimation adalah game berbasi terminal yang saya kembangkan sebagai bagian dari tugas mata kuliah di semester pertama. Game ini menguji kemampuan pemain dalam menebak angka yang diacak oleh program dalam jumlah percobaan tertentu.
 
-{% 
-    include embed/video.html 
-    src=/Recording 2025-01-10 144442.mp4
-    title='Video Permainan'
-%}
-
 Fitur utama dari <b>Guesstimation</b> meliputi:
 1. <b>Pilihan Tingkat Kesulitan</b>: Pemain dapat memilih dari empat tingkat kesulitan, yaitu Easy (0-50), Middle (0-100), Hard (0-500), dan Expert (0-1000).
 2. <b>Sistem Skor</b>: Skor dihitung berdasarkan kecepatan dan ketepatan dalam menebak angka.

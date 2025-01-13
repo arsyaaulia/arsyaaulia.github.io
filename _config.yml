@@ -99,7 +99,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 'assets/media/profile.jpeg'
+avatar: 'assets/media/WhatsApp Image 2025-01-13 at 04.52.35_841d7e9a.jpg'
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

@@ -40,15 +40,26 @@ _Background Zoom : GDG OC UCM_
 
 Desain ini dibuat untuk kebutuhan event Google Developers on Campus Universitas Makassar. Menggunakan konsep gradien dengan perpaduan empat warna utama khas Google: merah, hijau, kuning, dan biru. Desain ini juga mengadopsi elemen geomteris yang menjadi ciri  khas visual Google, menciptakan tampilan yang modern, dinamis, dan profesional. Berujuan untuk memberikan suasana yang selaras dengan identitas Google dan mendukung pengalaman visual peserta selama acara berlangsung.
 
-## 3. Personal Project
+## 3. Personal Design
 Tidak hanya mengembangkan skill di organisasi, saat ada waktu yang cukup luang saya suka membuat desain. Berikut beberapa desain yang saya buat selama waktu luang.
 
 ![desain3](/What’s Wrong.png){: width="400"}
 _Missing : A Detective's Tale_
 
-"Missing : A Detective's Tale" terinspirasi dari berbagai karya di Pinterest, mengusung konsep detektif dengan sentuhan retro ala tahun 1800-an. Menggabungkan elemen khas seperti koran lawas, dokumen rahasia, dan detail visual seperti surat serta kode biner yang tersembunyi di foto. Dengan suasana misteri yang kuat, proyek ini bertujuan untuk menghadirkan pengalaman visual yang memikat sekaligus penuh teka-teki, mencerminkan era investigasi klasik.
+Desain ini terinspirasi dari berbagai karya di Pinterest yang mengusung konsep tema detektif, surat, dan misteri. Judul "Missing: A Detective's Tale" menggambarkan narasi cerita tentang pencarian seseorang yang hilang, dengan elemen visual yang menggugah rasa ingin tahu.
+
+<b>Elemen Visual:</b>
+- <b>Sentuhan Retro Tahun 1800-an Inggris:</b> Gaya retro diperkuat dengan penggunaan elemen seperti koran jadul, font bergaya klasik, dan palet warna yang bernuansa hangat dan kusam, menciptakan atmosfer masa lalu yang otentik.
+- <b>Dokumen dan Bukti:</b> Foto-foto dengan coretan dan penutup mata pada wajah subjek, memberikan kesan investigasi rahasia. Surat tangan menambah dimensi personal dan menyiratkan petunjuk dalam penyelidikan.
+- <b>Detail Misterius:</b> Elemen tambahan seperti sidik jari, kode biner, dan coretan merah memperkuat tema detektif, sekaligus menciptakan lapisan detail yang dapat mengundang perhatian dan interpretasi lebih lanjut dari penonton.
+
 
 ![desain2](/Solo game.png){: width="400" }
 _Papan Penanda Permainan untuk kebutuhan event_
 
-Terinsipirasi dari Papan Penanda permainan Rally Games saat O-Week 2024 mempadukan dengan konsep 12th NPLC 2025
+Dibuat sebagai papan penanda permainan untuk suatu event, terisnpirasi dari tema <b>"Murder Before the Sunrises"</b> pada <b>NPLC 2025</b>. Konsepnya menggabungkan elemen misteri, ketegangan, dan peringatan yang mendukung suasana permainan dengan intensitas tinggi.
+
+<b>Elemen Visual:</b>
+- <b>Warna Kuning dan Hitam:</b> Kombinasi warna ini digunakan untuk menciptakan kesan tegas dan mencolok, sehingga pemain dapat dengan mudah mengenali area permainan. Konsep ini menyerupai papan informasi yang memberikan identitas jelas pada zona tertentu.
+- <b>Detail Sidik Jari:</b> Sidik jari yang tersebar di desain memberikan sentuhan misteri, mendukung tema <b>"Murder Before the Sunrises"</b>. Elemen in  menonjolkan aspek investigasi dan menambah kedalaman pada desain.
+- <b>Garis dan Batas:</b> Bingkai dengan pola garis kuning-hitam menyerupai tanda batas area, memberikan visual yang kuat dan membantu pemain mengidentifikasi lokasi permainan dengan cepat.
