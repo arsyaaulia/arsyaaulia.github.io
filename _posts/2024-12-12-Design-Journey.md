@@ -16,9 +16,7 @@ Informatic Student Union merupakan organisasi sejenis Himpunan Mahasiswa Informa
 ![desain1](/CardSkill.png)
 _Kartu Permainan untuk Kebutuhan Event 12th NPLC_
 
-NPLC atau National Programming and Logic Competition merupakan salah satu event besar yang diadakan oleh ISU ; perlombaan progamming tingkat SMA. Saat hari penyisihan Final, akan dilaksanakan berbagai kegiatan, salah satunya adalah Rally Games. Para peserta akan bermain berbagai jenis permainan, pemain yang beruntung akan mendapatkan CardSkill yang akan mempermudah mereka dalam bermain.
-
-Rally Games NPLC tahun ini memiliki konsep detektif dan pembunuhan dengan judul "Murder Before The Sunrise". Berdasarkan konsep itu, saya mulai melakukan eksekusi desain dimulai dengan mencari inspirasi. Pada desain ini saya mengambil inspirasi dari koran Inggris sekitar tahun 1800-an. Membutuhkan waktu sekitar kurang lebih 1 pekan untuk pengerjaan desain ini.
+NPLC adalah salah satu event besar yang diadakan oleh ISU. Untuk kegiatan <b>Rally Games</b> dengan tema <b>'Murder Before The Sunrise'</b>, saya merancang desain CardSkill yang terinspirasi dari koran Inggris era 1800-an. Dengan sentuhan retro klasik, desain ini memperkuat atmosfer misteri yang diusung dalam konsep detektif. Proses pengerjaan desain memakan waktu sekitar satu minggu, dengan hasil yang memberikan pengalaman iimersif bagi para peserta.
 
 ### 1.2. Cover Video Youtube
 ![Youtube](/revisi 1 (2).png)
@@ -63,3 +61,6 @@ Dibuat sebagai papan penanda permainan untuk suatu event, terisnpirasi dari tema
 - <b>Warna Kuning dan Hitam:</b> Kombinasi warna ini digunakan untuk menciptakan kesan tegas dan mencolok, sehingga pemain dapat dengan mudah mengenali area permainan. Konsep ini menyerupai papan informasi yang memberikan identitas jelas pada zona tertentu.
 - <b>Detail Sidik Jari:</b> Sidik jari yang tersebar di desain memberikan sentuhan misteri, mendukung tema <b>"Murder Before the Sunrises"</b>. Elemen in  menonjolkan aspek investigasi dan menambah kedalaman pada desain.
 - <b>Garis dan Batas:</b> Bingkai dengan pola garis kuning-hitam menyerupai tanda batas area, memberikan visual yang kuat dan membantu pemain mengidentifikasi lokasi permainan dengan cepat.
+
+
+Melalui perjalanan desain ini, saya belajar bahwa setiap proyek adalah peluang untuk berkembang, berinovasi, dan memberikan dampak. Saya berkomitmen untuk terus memberikan kontribusi yang berarti, baik dalam organisasi maupun di luar. Saya percaya bahwa kreativitas adalah alat yang bisa membuka pintu masa depan yang penuh potensi.
