@@ -4,7 +4,7 @@ date: 2025-01-09
 categories: [Portfolio]
 tags: []     # TAG names should always be lowercase
 media_subpath: /assets/media/
-description: Organizational and Personal Creations
+description: Menampilkan portfolio perjalanan kreatif saya, mencakup karya desain grafis dari organisasi dan proyek personal dengan sentuhan inovatif dan beragam tema.
 ---
 
 Sebagai mahasiswi yang memiliki minat dan hobi di bidang kreatif, saya tidak ingin hal itu hanya mengendap dan tidak ada perkembangan, oleh karena itu saya memutuskan untuk bergabung beberapa organisasi untuk meningkatkan skill saya di bidang ini dengan harapan saya bisa memberikan lebih banyak manfaat untuk diri saya di masa depan ataupun orang lain.
@@ -61,6 +61,5 @@ Dibuat sebagai papan penanda permainan untuk suatu event, terisnpirasi dari tema
 - <b>Warna Kuning dan Hitam:</b> Kombinasi warna ini digunakan untuk menciptakan kesan tegas dan mencolok, sehingga pemain dapat dengan mudah mengenali area permainan. Konsep ini menyerupai papan informasi yang memberikan identitas jelas pada zona tertentu.
 - <b>Detail Sidik Jari:</b> Sidik jari yang tersebar di desain memberikan sentuhan misteri, mendukung tema <b>"Murder Before the Sunrises"</b>. Elemen in  menonjolkan aspek investigasi dan menambah kedalaman pada desain.
 - <b>Garis dan Batas:</b> Bingkai dengan pola garis kuning-hitam menyerupai tanda batas area, memberikan visual yang kuat dan membantu pemain mengidentifikasi lokasi permainan dengan cepat.
-
 
 Melalui perjalanan desain ini, saya belajar bahwa setiap proyek adalah peluang untuk berkembang, berinovasi, dan memberikan dampak. Saya berkomitmen untuk terus memberikan kontribusi yang berarti, baik dalam organisasi maupun di luar. Saya percaya bahwa kreativitas adalah alat yang bisa membuka pintu masa depan yang penuh potensi.

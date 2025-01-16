@@ -25,7 +25,6 @@ Selain itu, saya memiliki pengalaman sebagai content creator di media sosial. Da
 
 Dengan kombinasi keahlian di bidang informatika dan desain, saya berkomitmen untuk terus berkembang serta memberikan kontribusi yang berarti di berbagai proyek dan kolaborasi di masa depan.
 
-
 <b>Kontak</b> 
 - Instagram   : arsyaauliia
 - Email       : arsya1522@gmail.com
