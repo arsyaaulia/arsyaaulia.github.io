@@ -18,7 +18,7 @@ Melalui peran saya di oranisasi ini, saya telah mengerjakan beberapa desain, sep
 3. Background Zoom untuk event.
 4. Desain kartu permaiann untuk event.
 
-Anda dapat melihat portofolio desain saya di halaman <b>[Design Journey](https://arsyaaulia.github.io/posts/Design-Journey/)</b>.
+Anda dapat melihat portofolio desain saya di halaman <b>[Visual Portfolio](https://arsyaaulia.github.io/posts/Visual-Portfolio/)</b>.
 
 
 Selain itu, saya memiliki pengalaman sebagai content creator di media sosial. Dari tahun 2020 hingga 2022, saya mengelola akun Instagram bernama <b>sstarlight._</b>, yang berfokus pada tips remaja dan edukasi untuk pelajar. Dalam dua tahun, saya menciptakan lebih dari 200 konten dan berhasil mengumpulkan 11.000 pengikut. Meskipun akun tersebut kini tidak aktif, pengalaman ini membantu saya mengasah kemampuan menciptakan konten yang relevan dan menarik. 
