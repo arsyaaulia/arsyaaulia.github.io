@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arsya | Fullstack Dev</title>
+  <script  src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'text': {
+              50: '#0a0a10',
+              100: '#14141f',
+              200: '#27273f',
+              300: '#3b3b5e',
+              400: '#4f4f7d',
+              500: '#62629d',
+              600: '#8282b0',
+              700: '#a1a1c4',
+              800: '#c0c0d8',
+              900: '#e0e0eb',
+              950: '#efeff5',
+            },
+
+            'background': {
+              50: '#090a11',
+              100: '#111422',
+              200: '#222844',
+              300: '#333c66',
+              400: '#445088',
+              500: '#5563aa',
+              600: '#7783bb',
+              700: '#99a2cc',
+              800: '#bbc1dd',
+              900: '#dde0ee',
+              950: '#eeeff6',
+              960: '#f3f4f9'
+            },
+
+            'primary': {
+              50: '#070913',
+              100: '#0e1125',
+              200: '#1c234a',
+              300: '#293470',
+              400: '#374595',
+              500: '#4556ba',
+              600: '#6a78c8',
+              700: '#8f9ad6',
+              800: '#b5bce3',
+              900: '#daddf1',
+              950: '#eceef8',
+            },
+
+            'secondary': {
+              50: '#060814',
+              100: '#0b1028',
+              200: '#161f50',
+              300: '#222f77',
+              400: '#2d3e9f',
+              500: '#384ec7',
+              600: '#6071d2',
+              700: '#8895dd',
+              800: '#afb8e9',
+              900: '#d7dcf4',
+              950: '#ebedf9',
+            },
+
+            'accent': {
+              50: '#040715',
+              100: '#090e2a',
+              200: '#121c54',
+              300: '#1b2a7e',
+              400: '#2438a8',
+              500: '#2d45d2',
+              600: '#576bdb',
+              700: '#8190e4',
+              800: '#abb5ed',
+              900: '#d5daf6',
+              950: '#eaecfb',
+            },
+          },
+
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' }
+            }
+          },
+
+          animation: {
+            float: 'float 3s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cursor-trail" class="fixed w-4 h-4 rounded-full bg-primary-100 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 mix-blend-screen opacity-70 z-50"></div>
+  <!-- Header -->
+  <header class="bg-primary-100 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center text-[#fefefe]">
+
+      <span class="text-2xl font-bold bg-gradient-to-r from-primary-700 via-secondary-800 to-accent-800 bg-clip-text text-transparent [text-shadow:_0_0_20px_#c0c0d8]">
+        Arsya<span class="text-text-950">.id</span>
+      </span>
+      <nav class="space-x-4">
+        <a href="#profile" class="text-sm hover:text-accent-800 transition-all">Profile</a>
+        <a href="#skills" class="text-sm hover:text-accent-800">Skills</a>
+        <a href="#project" class="text-sm hover:text-accent-800">Mini Project</a>
+        <a href="#contact" class="text-sm hover:text-accent-800">Contact</a>
+        <!-- <button id="dark-toggle" class="ml-4">Tidur</button> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="profile" class="mx-auto py-12 flex flex-col items-center text-center bg-gradient-to-r from-primary-900 via-secondary-950 to-accent-900 shadow-md">
+    <img src="Foto Profile.png" alt="Profile Photo" class="rounded-full w-32 h-32 mb-6">
+    <span class="text-4xl font-bold mb-2 animate-float">Hi! I'm <span class="bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">Arsya</span><span> 👋</span></span>
+    <span class="text-xl font-semibold mb-1">Fullstack Developer</span>
+    
+  </section>
+
+
+  <!-- About Me Section -->
+   <section id="about-me" class="py-6 my-10">
+      <div class="container mx-auto px-5 text-center"> 
+        <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">About Me</span>
+          <div class="text-justify bg-primary-950  my-5 py-4 border-[0.5px] border-secondary-800 rounded-xl p-5 shadow-md mx-auto max-w-3xl items-center hover:bg-primary-950 hover:-translate-y-0.5 duration-500 hover:shadow-[0px_0px_10px_#abb5ed] hover:border-primary-600">
+            <span class="text-2xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Who Am I?</span>
+
+              <hr class="border-t-2 border-primary-200 opacity-50 my-2">
+    
+              <p>Hi! I'm Arsya Aulia Amira, a 19-year-old informatics student currently learning and exploring fullstack development. I only began coding in college, so I'm still navigating through trials, errors, and plenty of learning moments.</p>
+              <br>
+              <p>When I need a break, I turn to graphic design — a hobby I've enjoyed since I was 14. I may not be super passionate about it, but it's my go-to space to refresh and reset, even when it occasionally feels draining.</p>
+    
+              <div class="grid md:grid-cols-1 my-3 gap-2 grid-cols-1">
+                <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                  <!-- Badge 1 -->
+                  <span class="inline-flex items-center px-3 py-1 bg-gradient-to-r from-secondary-600 to-accent-700 rounded-full text-sm font-semibold text-white whitespace-nowrap">
+                    💻 Informatics Student
+                  </span>
+                        
+                  <!-- Badge 2 -->
+                  <span class="inline-flex items-center px-3 py-1 bg-gradient-to-r from-secondary-600 to-accent-700 rounded-full text-sm font-semibold text-white whitespace-nowrap">
+                    🎨 Creative Explorer
+                  </span>
+                    <!-- Badge 3 -->
+                    <!-- <span class="inline-flex items-center px-3 py-1 bg-gradient-to-r from-secondary-600 to-accent-700 rounded-full text-sm font-semibold text-white whitespace-nowrap">
+                      ☕️ Vanilla Latte Addict :D
+                    </span> -->
+                </div>
+                      
+              </div>
+                
+            </div>
+        </div>   
+   </section>
+
+   <!-- Skill I'm Building -->
+   <section id="skills" class="py-6 my-8">
+      <div class="container mx-auto px-5 text-center">
+
+        <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">Skills I'm Building</span>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5 my-5 ">
+
+          <div class="p-6 rounded-xl shadow-md bg-primary-950 border-[0.5px] border-secondary-800 hover:bg-primary-950 hover:-translate-y-1 duration-500 hover:shadow-[10px_10px_#abb5ed] hover:border-primary-500">
+            <div class="text-justify mb-4">
+                <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent hover:border-primary-500"><span></span>Graphic Design</span>
+                        <p class="text-sm opacity-80 mt-1">Canva, Adobe Illustrator, Figma</p>
+                    </div>
+                    <div class="w-full bg-primary-900 rounded-full h-2.5">
+                        <div class=" bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-700 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl shadow-md bg-primary-950 border-[0.5px] border-secondary-800 hover:bg-primary-950 hover:-translate-y-1 duration-500 hover:shadow-[0px_0px_10px_#abb5ed] hover:border-primary-500">
+                    <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Frontend Development</span>
+                        <p class="text-sm opacity-80 mt-1">HTML, CSS, Bootstrap, Tailwind, JS</p>
+                    </div>
+                    <div class="w-full bg-primary-900 rounded-full h-2.5">
+                        <div class=" bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-700 h-2.5 rounded-full" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl shadow-md bg-primary-950 border-[0.5px] border-secondary-800 hover:bg-primary-950 hover:-translate-y-1 duration-500 hover:shadow-[0px_0px_10px_#abb5ed] hover:border-primary-500">
+                    <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Backend Development</span>
+                        <p class="text-sm opacity-80 mt-1">Python, Java</p>
+                    </div>
+                    <div class="w-full bg-primary-900 rounded-full h-2.5">
+                        <div class=" bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-700 h-2.5 rounded-full" style="width: 10%"></div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl shadow-md bg-primary-950 border-[0.5px] border-secondary-800 hover:bg-primary-950 hover:-translate-y-1 duration-500 hover:shadow-[0px_0px_10px_#abb5ed] hover:border-primary-500">
+                    <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Database</span>
+                        <p class="text-sm opacity-80 mt-1">SQL</p>
+                    </div>
+                    <div class="w-full bg-primary-900 rounded-full h-2.5">
+                        <div class=" bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-700 h-2.5 rounded-full" style="width: 5%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </section>
+
+    <!-- Project -->
+    <section id="project" class="py-6 my-8">
+      <div class="container mx-auto px-5 text-center">
+          <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">My Mini Project</span>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 my-5">
+
+          <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="hidden gem.html" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+              
+              <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="#" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="#" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="#" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="#" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="rounded-2xl bg-primary-950 overflow-hidden border-[0.5px] border-secondary-800 shadow-md hover:bg-primary-950 hover:-translate-y-1 hover:border-primary-500 duration-500 hover:shadow-[0px_0px_10px_#abb5ed]">
+                  <div class="h-48 bg-gradient-to-br from-primary-700 via-secondary-800 to-accent-800 flex items-center justify-center">
+                      <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                  </div>
+                  <div class="p-6">
+                      <div class="text-justify mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>Project X</span>
+                        <p class="text-sm opacity-80 mt-1">Lorem placeholder</p>
+                      </div>
+                      <div class="flex flex-wrap md:flex-row gap-2 my-3 ">
+                        <button>
+                          <a href ="#" class="inline-flex items-center px-3 py-1 bg-primary-600 hover:bg-primary-500 rounded-full text-sm font-semibold text-white  whitespace-nowrap">
+                            View Project 
+                          </a>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary-100 text-gray-200 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>Connect with me:</p>
+        <div class="flex justify-center space-x-4 mt-2">
+          <a href="https://www.instagram.com/arsyaauliia/" class="hover:text-accent-800">Instagram</a>
+          <a href="https://github.com/arsyaaulia" class="hover:text-accent-800">GitHub</a>
+        </div>
+        <p class="text-sm mt-4">&copy; 2025 Arsya Aulia Amira. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

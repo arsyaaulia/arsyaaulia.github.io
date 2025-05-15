@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <script  src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'text': {
+                    50: '#110f09',
+                    100: '#211f12',
+                    200: '#423e24',
+                    300: '#635d36',
+                    400: '#857b47',
+                    500: '#a69a59',
+                    600: '#b8ae7a',
+                    700: '#c9c39c',
+                    800: '#dbd7bd',
+                    900: '#edebde',
+                    950: '#f6f5ee',
+                    960: '#fbfbf8',
+                    },
+                    'background': {
+                    50: '#101009',
+                    100: '#202013',
+                    200: '#414125',
+                    300: '#616138',
+                    400: '#82824a',
+                    500: '#a2a25d',
+                    600: '#b5b57d',
+                    700: '#c7c79e',
+                    800: '#dadabe',
+                    900: '#ececdf',
+                    950: '#f6f6ef',
+                    },
+                    'primary': {
+                    50: '#060d13',
+                    100: '#0d1926',
+                    200: '#19324d',
+                    300: '#264b73',
+                    400: '#336499',
+                    500: '#407dbf',
+                    600: '#6697cc',
+                    700: '#8cb1d9',
+                    800: '#b3cbe6',
+                    900: '#d9e5f2',
+                    950: '#ecf2f9',
+                    },
+                    'secondary': {
+                    50: '#091110',
+                    100: '#122120',
+                    200: '#244241',
+                    300: '#366361',
+                    400: '#478582',
+                    500: '#59a6a2',
+                    600: '#7ab8b5',
+                    700: '#9cc9c7',
+                    800: '#bddbda',
+                    900: '#deedec',
+                    950: '#eef6f6',
+                    },
+                    'accent': {
+                    50: '#090c11',
+                    100: '#121821',
+                    200: '#233043',
+                    300: '#354964',
+                    400: '#466186',
+                    500: '#5879a7',
+                    600: '#7994b9',
+                    700: '#9bafca',
+                    800: '#bcc9dc',
+                    900: '#dee4ed',
+                    950: '#eef2f6',
+                    },
+                },
+
+            }
+        }
+    }
+  </script>
+  <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-background-960 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-primary-100 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center text-[#fefefe]">
+      <h1 class="text-2xl font-bold">MyProfile</h1>
+      <nav class="space-x-4">
+        <a href="#profile" class="text-sm hover:text-blue-500 hover:bg-white">Profile</a>
+        <a href="#skills" class="text-sm hover:text-blue-500">Skills</a>
+        <a href="#portfolio" class="text-sm hover:text-blue-500">Mini Portfolio</a>
+        <a href="#contact" class="text-sm hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-[#9a7c72] text-gray-200 py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>Connect with me:</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="https://www.instagram.com/arsyaauliia/" class="hover:text-blue-400">Instagram</a>
+        <a href="https://github.com/arsyaaulia" class="hover:text-blue-400">GitHub</a>
+      </div>
+      <p class="text-sm mt-4">&copy; 2025 Arsya Aulia Amira. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
