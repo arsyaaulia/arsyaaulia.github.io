@@ -119,32 +119,46 @@
     <nav>
       <div class="container mx-auto px-4 py-4 flex justify-between items-center text-[#fefefe]">
 
-      <span class="text-2xl font-bold bg-gradient-to-r from-primary-700 via-secondary-800 to-accent-800 bg-clip-text text-transparent [text-shadow:_0_0_20px_#c0c0d8]">
-        Arsya<span class="text-text-950">.</span>
-      </span>
+        <span class="text-2xl font-bold bg-gradient-to-r from-primary-700 via-secondary-800 to-accent-800 bg-clip-text text-transparent [text-shadow:_0_0_20px_#c0c0d8]">
+          Arsya<span class="text-text-950">.</span>
+        </span>
 
-      <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
-      <ul id="menu" class="hidden md:flex space-x-4 text-sm">
-          <li href="#profile" class="hover:text-accent-800 transition">Profile</li>
-          <li href="#skills" class="hover:text-accent-800 transition">Skills</li>
-          <li href="#project" class="hover:text-accent-800 transition">Mini Project</li>
-          <li href="#contact" class="hover:text-accent-800 transition">Contact</li>
-      </ul>
-      <!-- <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
-      <nav class="flex space-x-4">
-        <ul id="menu" class="flex space-x-4 text-sm hover:text-accent-800 transition">
-          <li href="#profile">Profile</li>
-          <li href="#skills">Skills</li>
-          <li href="#project">Mini Project</li>
-          <li href="#contact">Contact</li>
+        <button id="toggleSidebar" class="text-white text-2xl md:hidden">☰</button>
+        <ul class="hidden md:flex space-x-4 text-sm">
+            <li href="#profile" class="hover:text-accent-800 transition">Profile</li>
+            <li href="#skills" class="hover:text-accent-800 transition">Skills</li>
+            <li href="#project" class="hover:text-accent-800 transition">Mini Project</li>
+            <li href="#contact" class="hover:text-accent-800 transition">Contact</li>
         </ul>
-      </nav> -->
 
+        <!-- <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
+        <nav class="flex space-x-4">
+          <ul id="menu" class="flex space-x-4 text-sm hover:text-accent-800 transition">
+            <li href="#profile">Profile</li>
+            <li href="#skills">Skills</li>
+            <li href="#project">Mini Project</li>
+            <li href="#contact">Contact</li>
+          </ul>
+        </nav> -->
       
-    </div>
+      </div>
     </nav>
-    
   </header>
+
+  <!-- Sidebar Mobile -->
+   <div id="mobileSidebar" class="fixed top-0 left-0 h-full w-64 bg-primary-100 text-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 md:hidden">
+      <div class="flex justify-between items-center px-4 py-3 border-b border-white/20">
+        <span class="text-lg font-bold">Menu</span>
+        <!-- Pakai unicode untuk tanda x : &times; -->
+        <button id="closeSidebar" class="text-2xl">&times;</button> 
+      </div>
+      <ul class="px-4 py-6 space-y-4 text-sm">
+        <li><a href="#profile" class="block hover:text-accent-500">Profile</a></li>
+        <li><a href="#skills" class="block hover:text-accent-500">Skills</a></li>
+        <li><a href="#project" class="block hover:text-accent-500">Mini Project</a></li>
+        <li><a href="#contact" class="block hover:text-accent-500">Contact</a></li>
+      </ul>
+    </div>
 
   <!-- Profile Section -->
   <section id="profile" class="mx-auto py-12 flex flex-col items-center text-center bg-gradient-to-r from-primary-900 via-secondary-950 to-accent-900 shadow-md">

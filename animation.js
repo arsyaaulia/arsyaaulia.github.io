@@ -14,10 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
-  const toggleButton = document.getElementById('menuToggle');
-  const navMenu = document.getElementById('navMenu');
+  const toggleBtn = document.getElementById('toggleSidebar');
+  const sidebar = document.getElementById('mobileSidebar');
+  const closeBtn = document.getElementById('closeSidebar');
 
-  toggleButton.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-full');
+    sidebar.classList.add('translate-x-0');
   });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-0');
+    sidebar.classList.add('translate-x-full');
+  });
+
+  window.addEventListener('scroll', ()=>{
+    if(scrollY > 50){
+        navBar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+        navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50');
+    } else { 
+        navBar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+        navLinks.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50');
+
+    }
+  })
 });
