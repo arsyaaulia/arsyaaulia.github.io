@@ -1,18 +1,23 @@
-// Scroll animations for sections
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-  
-  const observer = new IntersectionObserver((entries) => {
+  const fadeElements = document.querySelectorAll('.fade-in'); //cari semua class dengan nama fade-in
+
+  const observer = new IntersectionObserver((entries) => { //mantau kapan elemen muncul di layar
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add(
-          'animate-fade-up', 
-          'animate-duration-500',
-          'animate-ease-out'
-        );
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // agar animasi hanya sekali
       }
     });
-  }, { threshold: 0.1 });
+  }, {
+    threshold: 0.1
+  });
 
-  sections.forEach(section => observer.observe(section));
+  fadeElements.forEach(el => observer.observe(el));
+
+  const toggleButton = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
 });

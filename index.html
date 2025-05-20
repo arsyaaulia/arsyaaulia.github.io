@@ -81,48 +81,74 @@
               950: '#eaecfb',
             },
           },
-
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' }
-            }
-          },
-
-          animation: {
-            float: 'float 3s ease-in-out infinite'
-            
-          }
         }
       }
     }
   </script>
+
+  <style>
+    @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    opacity: 0; /* disembunyikan dulu */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .fade-in.active {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+  </style>
   
   <link href="src/output.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="cursor-trail" class="fixed w-4 h-4 rounded-full bg-primary-100 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 mix-blend-screen opacity-70 z-50"></div>
+  
   <!-- Header -->
   <header class="bg-primary-100 shadow-md">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center text-[#fefefe]">
+    <nav>
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center text-[#fefefe]">
 
       <span class="text-2xl font-bold bg-gradient-to-r from-primary-700 via-secondary-800 to-accent-800 bg-clip-text text-transparent [text-shadow:_0_0_20px_#c0c0d8]">
         Arsya<span class="text-text-950">.</span>
       </span>
-      <nav class="space-x-4">
-        <a href="#profile" class="text-sm hover:text-accent-800 transition">Profile</a>
-        <a href="#skills" class="text-sm hover:text-accent-800 transition">Skills</a>
-        <a href="#project" class="text-sm hover:text-accent-800 transition">Mini Project</a>
-        <a href="#contact" class="text-sm hover:text-accent-800 transition">Contact</a>
-        <!-- <button id="dark-toggle" class="ml-4">Tidur</button> -->
-      </nav>
+
+      <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
+      <ul id="menu" class="hidden md:flex space-x-4 text-sm">
+          <li href="#profile" class="hover:text-accent-800 transition">Profile</li>
+          <li href="#skills" class="hover:text-accent-800 transition">Skills</li>
+          <li href="#project" class="hover:text-accent-800 transition">Mini Project</li>
+          <li href="#contact" class="hover:text-accent-800 transition">Contact</li>
+      </ul>
+      <!-- <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
+      <nav class="flex space-x-4">
+        <ul id="menu" class="flex space-x-4 text-sm hover:text-accent-800 transition">
+          <li href="#profile">Profile</li>
+          <li href="#skills">Skills</li>
+          <li href="#project">Mini Project</li>
+          <li href="#contact">Contact</li>
+        </ul>
+      </nav> -->
+
+      
     </div>
+    </nav>
+    
   </header>
 
   <!-- Profile Section -->
   <section id="profile" class="mx-auto py-12 flex flex-col items-center text-center bg-gradient-to-r from-primary-900 via-secondary-950 to-accent-900 shadow-md">
-    <img src="Foto Profile.png" alt="Profile Photo" class="rounded-full w-32 h-32 mb-6">
+    <img src="/img/Profile place holder.jpeg" alt="Profile Photo" class="rounded-full w-32 h-32 mb-6">
     <span class="text-4xl font-bold mb-2 animate-float">Hi! I'm <span class="bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">Arsya</span><span> 👋</span></span>
     <span class="text-xl font-semibold mb-1">Fullstack Developer</span>
     
@@ -130,7 +156,7 @@
 
 
   <!-- About Me Section -->
-   <section id="about-me" class="py-6 my-10">
+   <section id="about-me" class="fade-in py-6 my-10">
       <div class="container mx-auto px-5 text-center"> 
         <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">About Me</span>
         <div class="text-justify bg-primary-950  my-5 py-4 border-[0.5px] border-secondary-800 rounded-xl p-5 shadow-md mx-auto max-w-3xl items-center hover:bg-primary-950 hover:-translate-y-0.5 duration-500 hover:shadow-[0px_0px_10px_#abb5ed] hover:border-primary-600">
@@ -166,7 +192,7 @@
           <span class="text-2xl font-bold bg-gradient-to-r from-primary-200 to-primary-300 bg-clip-text text-transparent"><span></span>My Experience</span>
           <hr class="border-t-2 border-primary-200 opacity-50 my-2">
           
-            <li><b>Informatic Student Union</b>: Be a part of Creative & Publication division member. Focused on designing and curating content for the organization’s social media platforms. Responsible for creating visual assets and publishing content to support digital communication and engagement.</li>
+            <li><b>Informatic Student Union</b>: Be a part of Creative & Publication division member. Focused on designing and curating content for the organization's social media platforms. Responsible for creating visual assets and publishing content to support digital communication and engagement.</li>
             <br>
             <li><b>Google Developer on Campus UC Makassar</b>: Be a part of Creative division member. Contributed to the visual development of event materials, including stickers, Zoom backgrounds, and presentation templates. Supported the team by delivering cohesive and branded creative assets for various event needs.</li>
             <!-- <br>
@@ -176,7 +202,7 @@
    </section>
 
    <!-- Skill I'm Building -->
-   <section id="skills" class="py-6 my-8">
+   <section id="skills" class="fade-in py-6 my-8">
       <div class="container mx-auto px-5 text-center">
 
         <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">Skills I'm Building</span>
@@ -228,7 +254,7 @@
    </section>
 
     <!-- Project -->
-    <section id="project" class="py-6 my-8">
+    <section id="project" class="fade-in py-6 my-8">
       <div class="container mx-auto px-5 text-center">
         <span class="text-3xl font-bold bg-gradient-to-r from-primary-400 via-secondary-300 to-accent-300 bg-clip-text text-transparent [text-shadow:_0_0_30px_#abb5ed]">My Mini Project</span>
 
@@ -398,6 +424,6 @@
         <p class="text-sm mt-4">&copy; 2025 Arsya Aulia Amira. All rights reserved.</p>
       </div>
     </footer>
-
+    <script src="animation.js"></script>
   </body>
 </html>
