@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Portfolio Gamified - Creative Developer Portfolio dengan Nuansa Gaming" />
+    <meta name="keywords" content="portfolio, developer, creative, gamification, react" />
+    <meta name="author" content="Your Name" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Portfolio Gamified | Creative Developer" />
+    <meta property="og:description" content="Tech enthusiast & creative developer portfolio dengan pengalaman gaming" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/images/og-image.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    
+    <!-- Font Awesome (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>Portfolio Gamified | Creative Developer</title>
+  </head>
+  <body>
+    <!-- Root element - React akan mount di sini -->
+    <div id="root"></div>
+    
+    <!-- Loading indicator (akan hilang setelah React load) -->
+    <div id="loading-screen" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s;
+    ">
+      <div style="text-align: center">
+        <div style="
+          width: 60px;
+          height: 60px;
+          border: 4px solid #a855f7;
+          border-top-color: transparent;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin: 0 auto 20px;
+        "></div>
+        <p style="color: white; font-family: monospace">Loading awesome stuff... 🚀</p>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Fallback styles sebelum React load */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: white;
+      }
+      
+      /* Hide loading screen when React is ready */
+      #loading-screen.hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+    
+    <script>
+      // Remove loading screen after React loads
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const loader = document.getElementById('loading-screen');
+          if (loader) {
+            loader.classList.add('hide');
+            setTimeout(() => loader.remove(), 500);
+          }
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
