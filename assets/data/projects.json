@@ -1,0 +1,200 @@
+{
+  "tech": [
+    {
+      "id": 1,
+      "title": "AI-Powered Code Assistant",
+      "description": "Intelligent code completion and debugging assistant using machine learning that helps developers write better code faster.",
+      "tags": ["Python", "TensorFlow", "FastAPI", "React"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/ai-assistant",
+      "date": "2024-01-15",
+      "featured": true,
+      "github": "https://github.com/arsyaaulia/ai-assistant",
+      "demo": "https://ai-assistant.demo.com"
+    },
+    {
+      "id": 2,
+      "title": "Blockchain Voting System",
+      "description": "Decentralized voting platform with transparent and secure ballot counting using Ethereum blockchain technology.",
+      "tags": ["Solidity", "Web3.js", "Ethereum", "Smart Contracts"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/blockchain-voting",
+      "date": "2023-12-10",
+      "featured": true,
+      "github": "https://github.com/arsyaaulia/blockchain-voting"
+    },
+    {
+      "id": 3,
+      "title": "Real-time Analytics Dashboard",
+      "description": "Interactive dashboard for real-time data visualization and monitoring with customizable widgets.",
+      "tags": ["React", "D3.js", "WebSocket", "Node.js"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/analytics-dashboard",
+      "date": "2023-11-20",
+      "featured": true,
+      "demo": "https://dashboard.demo.com"
+    },
+    {
+      "id": 4,
+      "title": "Mobile App Performance Monitor",
+      "description": "Tool for monitoring and optimizing mobile app performance metrics with real-time alerts.",
+      "tags": ["React Native", "Firebase", "GraphQL", "TypeScript"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/mobile-monitor",
+      "date": "2023-10-05",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Cloud Infrastructure Manager",
+      "description": "Web-based tool for managing cloud resources across multiple providers with automated scaling.",
+      "tags": ["AWS", "Terraform", "Go", "Kubernetes"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/cloud-manager",
+      "date": "2023-09-12",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Automated Testing Framework",
+      "description": "End-to-end testing framework with AI-powered test generation and intelligent assertions.",
+      "tags": ["Jest", "Cypress", "AI", "Playwright"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/testing-framework",
+      "date": "2023-08-18",
+      "featured": false
+    }
+  ],
+  "creative": [
+    {
+      "id": 1,
+      "title": "Interactive Art Installation",
+      "description": "Generative art piece that responds to viewer movements and sound using computer vision and audio analysis.",
+      "tags": ["p5.js", "WebGL", "TensorFlow.js", "Creative Coding"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/interactive-art",
+      "date": "2024-01-20",
+      "featured": true,
+      "demo": "https://interactive-art.demo.com"
+    },
+    {
+      "id": 2,
+      "title": "3D Audio Visualizer",
+      "description": "Immersive music visualization experience in 3D space with real-time audio frequency analysis.",
+      "tags": ["Three.js", "Web Audio API", "GLSL", "Shader"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/audio-visualizer",
+      "date": "2023-12-05",
+      "featured": true,
+      "demo": "https://visualizer.demo.com"
+    },
+    {
+      "id": 3,
+      "title": "Generative Typography",
+      "description": "Dynamic typography system that creates unique text animations based on user input and motion.",
+      "tags": ["Canvas API", "JavaScript", "Creative Coding", "Typography"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/generative-typography",
+      "date": "2023-11-15",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "VR Gallery Experience",
+      "description": "Virtual reality art gallery with interactive exhibits and immersive 3D navigation.",
+      "tags": ["A-Frame", "WebXR", "Three.js", "VR"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/vr-gallery",
+      "date": "2023-10-25",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Motion Capture Animation",
+      "description": "Real-time motion capture for 3D character animation using webcam and pose detection.",
+      "tags": ["MediaPipe", "Three.js", "WebGL", "Animation"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/motion-capture",
+      "date": "2023-09-30",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Neural Style Transfer",
+      "description": "Apply artistic styles to images using neural networks in real-time with web interface.",
+      "tags": ["TensorFlow.js", "Canvas API", "AI Art", "Machine Learning"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://github.com/arsyaaulia/style-transfer",
+      "date": "2023-08-22",
+      "featured": false
+    }
+  ],
+  "article": [
+    {
+      "id": 1,
+      "title": "The Future of Web Development: AI and No-Code",
+      "description": "Exploring how artificial intelligence is transforming the way we build web applications and the rise of no-code platforms.",
+      "tags": ["AI", "Web Development", "Future Tech", "No-Code"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://arsyaaulia.github.io/articles/future-web",
+      "date": "2024-01-10",
+      "readTime": "8 min read",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Creative Coding: Where Art Meets Technology",
+      "description": "A deep dive into the world of creative coding and generative art, exploring how code becomes a medium for artistic expression.",
+      "tags": ["Creative Coding", "Art", "Programming", "Generative Art"],
+      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
+      "link": "https://arsyaaulia.github.io/articles/creative-coding",
+      "date": "2023-12-18",
+      "readTime": "6 min read",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Building Interactive Experiences with WebGL",
+      "description": "Technical guide to creating immersive 3D experiences on the web using WebGL and Three.js.",
+      "tags": ["WebGL", "Three.js", "3D Graphics", "Interactive"],
+      "image": "https://i.pinimg.com/736x/04/8e/0f/048e0f2919c79e32387768629a17a83b.jpg",
+      "link": "https://arsyaaulia.github.io/articles/webgl-guide",
+      "date": "2023-11-28",
+      "readTime": "10 min read",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "The Rise of Edge Computing",
+      "description": "How edge computing is changing the landscape of web applications and enabling real-time experiences.",
+      "tags": ["Edge Computing", "Cloud", "Performance", "CDN"],
+      "image": "https://i.pinimg.com/736x/04/8e/0f/048e0f2919c79e32387768629a17a83b.jpg",
+      "link": "https://arsyaaulia.github.io/articles/edge-computing",
+      "date": "2023-10-15",
+      "readTime": "7 min read",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Design Systems in 2024",
+      "description": "Best practices for building scalable design systems that work across multiple platforms and devices.",
+      "tags": ["Design", "UI/UX", "Frontend", "Component Library"],
+      "image": "https://i.pinimg.com/1200x/89/23/74/8923742bc4a5e19cdc02ae818f9e5dd3.jpg",
+      "link": "https://arsyaaulia.github.io/articles/design-systems",
+      "date": "2023-09-20",
+      "readTime": "5 min read",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "WebAssembly: The Future of Web Performance",
+      "description": "Understanding WebAssembly and its impact on web applications, with practical examples and use cases.",
+      "tags": ["WebAssembly", "Performance", "Rust", "C++"],
+      "image": "https://i.pinimg.com/736x/04/8e/0f/048e0f2919c79e32387768629a17a83b.jpg",
+      "link": "https://arsyaaulia.github.io/articles/webassembly",
+      "date": "2023-08-25",
+      "readTime": "9 min read",
+      "featured": false
+    }
+  ]
+}

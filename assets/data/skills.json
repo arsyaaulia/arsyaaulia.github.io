@@ -1,0 +1,52 @@
+{
+  "skills": [
+    {
+      "name": "React.js",
+      "icon": "fab fa-react",
+      "level": 90,
+      "color": "text-blue-400"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "fab fa-js",
+      "level": 85,
+      "color": "text-yellow-400"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python",
+      "level": 80,
+      "color": "text-green-400"
+    },
+    {
+      "name": "Node.js",
+      "icon": "fab fa-node-js",
+      "level": 75,
+      "color": "text-green-500"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "fas fa-wind",
+      "level": 88,
+      "color": "text-cyan-400"
+    },
+    {
+      "name": "Three.js",
+      "icon": "fas fa-cube",
+      "level": 70,
+      "color": "text-purple-400"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "fas fa-code",
+      "level": 78,
+      "color": "text-blue-500"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "fas fa-database",
+      "level": 72,
+      "color": "text-green-400"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative projects portfolio - Arsya Aulia">
+    <title>Creative Projects | Arsya Aulia</title>
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 120px 2rem 4rem;
+            background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+            text-align: center;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 100px;
+            left: 2rem;
+            background: var(--bg-secondary);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            z-index: 100;
+            font-weight: 500;
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+            background: var(--primary);
+        }
+        
+        .category-icon-large {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        
+        .projects-grid-full {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid-full {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-button {
+                top: 80px;
+                left: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+            }
+            
+            .filter-bar {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 0.4rem 1rem;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    
+    <button class="back-button" onclick="window.location.href='../index.html#projects'">
+        <span>←</span>
+        <span>Back to Home</span>
+    </button>
+    
+    <div class="page-header">
+        <div class="category-hero">
+            <div class="category-icon-large">🎨</div>
+            <h1 class="glitch-text" data-text="Creative Projects">Creative Projects</h1>
+            <p class="hero-subtitle">Where imagination meets technology</p>
+        </div>
+    </div>
+    
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="featured">Featured</button>
+        <button class="filter-btn" data-filter="latest">Latest</button>
+    </div>
+    
+    <div class="projects-container">
+        <div class="projects-grid-full" id="allProjectsGrid"></div>
+    </div>
+    
+    <!-- Achievement Popup -->
+    <div id="achievementPopup" class="achievement-popup">
+        <div class="achievement-popup-content">
+            <span class="achievement-icon">🏆</span>
+            <span class="achievement-message"></span>
+        </div>
+    </div>
+    
+    <script src="../assets/js/projects.js"></script>
+    <script src="../assets/js/gamification.js"></script>
+    <script>
+        let currentFilter = 'all';
+        let allProjects = [];
+        
+        function loadProjects() {
+            if (projectManager) {
+                allProjects = projectManager.getAllProjects('creative');
+                renderProjects();
+            }
+        }
+        
+        function renderProjects() {
+            let filteredProjects = [...allProjects];
+            
+            if (currentFilter === 'featured') {
+                filteredProjects = filteredProjects.filter(p => p.featured);
+            } else if (currentFilter === 'latest') {
+                filteredProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
+            }
+            
+            const grid = document.getElementById('allProjectsGrid');
+            grid.innerHTML = '';
+            
+            if (filteredProjects.length === 0) {
+                grid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No projects found.</p>';
+                return;
+            }
+            
+            filteredProjects.forEach(project => {
+                const card = projectManager.createProjectCard(project, 'creative');
+                grid.appendChild(card);
+            });
+        }
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.getAttribute('data-filter');
+                renderProjects();
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (projectManager) {
+                    loadProjects();
+                }
+            }, 100);
+        });
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
