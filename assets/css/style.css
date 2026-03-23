@@ -346,6 +346,7 @@ section {
 
 .experience-card {
     background: var(--bg-secondary);
+    margin-top:3rem;
     padding: 2rem;
     border-radius: 20px;
     border: 1px solid rgba(99, 102, 241, 0.2);
@@ -524,7 +525,8 @@ section {
 /* Responsive untuk About Photo */
 @media (max-width: 768px) {
     .photo-card {
-        width: 100%;
+        width: 200px;
+        height: 300px;
     }
     
     .profile-photo {

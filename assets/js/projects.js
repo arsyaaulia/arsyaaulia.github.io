@@ -184,14 +184,22 @@ class ProjectManager {
     navigateToDetail(category, id) {
         const project = this.projects[category].find(p => p.id === parseInt(id));
         if (project) {
-            localStorage.setItem('currentProject', JSON.stringify({
-                category: category,
-                project: project
-            }));
-            // For now, just show achievement
-            if (window.gamificationSystem) {
-                window.gamificationSystem.addPoints(5);
-                window.gamificationSystem.showAchievement(`Viewing: ${project.title}`);
+            // Check if project has a link
+            if (project.link && project.link !== '#') {
+                // Open link in new tab
+                window.open(project.link, '_blank');
+                
+                // Add achievement points
+                if (window.gamificationSystem) {
+                    window.gamificationSystem.addPoints(10);
+                    window.gamificationSystem.showAchievement(`Opening: ${project.title.substring(0, 30)}${project.title.length > 30 ? '...' : ''}`);
+                }
+            } else {
+                // If no link, show message
+                if (window.gamificationSystem) {
+                    window.gamificationSystem.showAchievement(`No link available for this project yet 🔗`);
+                }
+                console.warn('No link available for project:', project.title);
             }
         }
     }
