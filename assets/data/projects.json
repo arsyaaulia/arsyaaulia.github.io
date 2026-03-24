@@ -53,16 +53,6 @@
       "link": "https://github.com/arsyaaulia/cloud-manager",
       "date": "2023-09-12",
       "featured": false
-    },
-    {
-      "id": 6,
-      "title": "Automated Testing Framework",
-      "description": "End-to-end testing framework with AI-powered test generation and intelligent assertions.",
-      "tags": ["Jest", "Cypress", "AI", "Playwright"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/testing-framework",
-      "date": "2023-08-18",
-      "featured": false
     }
   ],
   "creative": [

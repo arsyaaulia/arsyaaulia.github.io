@@ -77,7 +77,7 @@ class PortfolioApp {
     }
 
     initTypingEffect() {
-        const words = ['Developer', 'Designer', 'Creator', 'Innovator', 'Technologist'];
+        const words = ['Trying Things', 'Learning Code', 'Making Stuff', 'Exploring Ideas', 'Figuring Things Out'];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
