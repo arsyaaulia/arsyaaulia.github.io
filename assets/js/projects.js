@@ -19,7 +19,8 @@ class ProjectManager {
 
     async loadData() {
         try {
-            const response = await fetch('assets/data/projects.json');
+            // Gunakan absolute path dari root
+            const response = await fetch('/assets/data/projects.json');
             if (!response.ok) throw new Error('Failed to load projects data');
             const data = await response.json();
             this.projects = data;
@@ -222,7 +223,18 @@ class ProjectManager {
     }
 
     getAllProjects(category) {
-        return this.projects[category] || [];
+        console.log('Getting all projects for category:', category);
+        console.log('Available projects:', this.projects);
+        
+        if (category === 'tech') {
+            console.log('Tech projects count:', this.projects.tech?.length);
+            return this.projects.tech || [];
+        } else if (category === 'creative') {
+            return this.projects.creative || [];
+        } else if (category === 'article') {
+            return this.projects.article || [];
+        }
+        return [];
     }
 
     getProjectById(category, id) {

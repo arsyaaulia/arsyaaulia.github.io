@@ -126,11 +126,11 @@
         </div>
     </div>
     
-    <div class="filter-bar">
+    <!-- <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All Articles</button>
         <button class="filter-btn" data-filter="featured">Featured</button>
         <button class="filter-btn" data-filter="latest">Latest</button>
-    </div>
+    </div> -->
     
     <div class="projects-container">
         <div class="projects-grid-full" id="allProjectsGrid"></div>
@@ -153,7 +153,14 @@
         function loadProjects() {
             if (projectManager) {
                 allProjects = projectManager.getAllProjects('article');
+                console.log('Total articles loaded:', allProjects.length);
+                console.log('Projects data:', allProjects);
+
+                currentPage = 1;
                 renderProjects();
+            } else {
+                console.error('ProjectManager not initialized.');
+                setTimeout(loadProjects, 500);
             }
         }
         

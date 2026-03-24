@@ -151,11 +151,11 @@
         </div>
     </div>
     
-    <div class="filter-bar">
+    <!-- <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="featured">Featured</button>
         <button class="filter-btn" data-filter="latest">Latest</button>
-    </div>
+    </div> -->
     
     <div class="projects-container">
         <div class="projects-grid-full" id="allProjectsGrid"></div>
@@ -180,8 +180,18 @@
         
         function loadProjects() {
             if (projectManager) {
+                // Ambil semua project dari kategori 'tech'
                 allProjects = projectManager.getAllProjects('tech');
+                console.log('Total tech projects loaded:', allProjects.length);
+                console.log('Projects data:', allProjects);
+                
+                // Reset ke halaman pertama
+                currentPage = 1;
                 renderProjects();
+            } else {
+                console.error('ProjectManager not initialized');
+                // Retry after delay
+                setTimeout(loadProjects, 500);
             }
         }
         
