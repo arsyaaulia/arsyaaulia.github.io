@@ -5,7 +5,7 @@
       "title": "Guesstimation",
       "description": "Game tebak angka berbasis web dengan sistem level dan skor, dirancang dengan pendekatan UI minimalis dan interaktif.",
       "tags": ["JavaScript", "HTML", "CSS", "Game"],
-      "image": "../img/guesstimation.png",
+      "image": "../img/Guesstimation.png",
       "link": "https://github.com/arsyaaulia/Guesstimation",
       "date": "2026-03",
       "featured": false
