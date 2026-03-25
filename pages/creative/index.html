@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tech projects portfolio - Arsya Aulia">
-    <title>Tech Projects | Arsya Aulia</title>
+    <meta name="description" content="Creative projects portfolio - Arsya Aulia">
+    <title>Creative Projects | Arsya Aulia</title>
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="../src/output.css">
@@ -87,31 +87,6 @@
             margin-bottom: 3rem;
         }
         
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-        
-        .page-btn {
-            background: var(--bg-secondary);
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 10px;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: var(--transition);
-            min-width: 40px;
-        }
-        
-        .page-btn:hover,
-        .page-btn.active {
-            background: var(--primary);
-            color: white;
-        }
-        
         @media (max-width: 768px) {
             .projects-grid-full {
                 grid-template-columns: 1fr;
@@ -145,21 +120,20 @@
     
     <div class="page-header">
         <div class="category-hero">
-            <div class="category-icon-large">💻</div>
-            <h1 class="glitch-text" data-text="Tech Projects">Tech Projects</h1>
-            <p class="hero-subtitle">Building innovative solutions with cutting-edge technology</p>
+            <div class="category-icon-large">🎨</div>
+            <h1 class="glitch-text" data-text="Creative Projects">Creative Projects</h1>
+            <p class="hero-subtitle">A space to explore visuals and ideas. No rules, just experimenting and creating.</p>
         </div>
     </div>
     
-    <!-- <div class="filter-bar">
+    <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="featured">Featured</button>
         <button class="filter-btn" data-filter="latest">Latest</button>
-    </div> -->
+    </div>
     
     <div class="projects-container">
         <div class="projects-grid-full" id="allProjectsGrid"></div>
-        <div class="pagination" id="pagination"></div>
     </div>
     
     <!-- Achievement Popup -->
@@ -173,25 +147,13 @@
     <script src="../assets/js/projects.js"></script>
     <script src="../assets/js/gamification.js"></script>
     <script>
-        let currentPage = 1;
         let currentFilter = 'all';
         let allProjects = [];
-        const itemsPerPage = 6;
         
         function loadProjects() {
             if (projectManager) {
-                // Ambil semua project dari kategori 'tech'
-                allProjects = projectManager.getAllProjects('tech');
-                console.log('Total tech projects loaded:', allProjects.length);
-                console.log('Projects data:', allProjects);
-                
-                // Reset ke halaman pertama
-                currentPage = 1;
+                allProjects = projectManager.getAllProjects('creative');
                 renderProjects();
-            } else {
-                console.error('ProjectManager not initialized');
-                // Retry after delay
-                setTimeout(loadProjects, 500);
             }
         }
         
@@ -204,53 +166,25 @@
                 filteredProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
             }
             
-            const start = (currentPage - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            const paginatedProjects = filteredProjects.slice(start, end);
-            
             const grid = document.getElementById('allProjectsGrid');
             grid.innerHTML = '';
             
-            if (paginatedProjects.length === 0) {
+            if (filteredProjects.length === 0) {
                 grid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No projects found.</p>';
                 return;
             }
             
-            paginatedProjects.forEach(project => {
-                const card = projectManager.createProjectCard(project, 'tech');
+            filteredProjects.forEach(project => {
+                const card = projectManager.createProjectCard(project, 'creative');
                 grid.appendChild(card);
             });
-            
-            renderPagination(filteredProjects.length);
         }
         
-        function renderPagination(totalItems) {
-            const totalPages = Math.ceil(totalItems / itemsPerPage);
-            const pagination = document.getElementById('pagination');
-            pagination.innerHTML = '';
-            
-            if (totalPages <= 1) return;
-            
-            for (let i = 1; i <= totalPages; i++) {
-                const btn = document.createElement('button');
-                btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
-                btn.textContent = i;
-                btn.addEventListener('click', () => {
-                    currentPage = i;
-                    renderProjects();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-                pagination.appendChild(btn);
-            }
-        }
-        
-        // Filter buttons
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilter = btn.getAttribute('data-filter');
-                currentPage = 1;
                 renderProjects();
             });
         });
