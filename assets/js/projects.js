@@ -170,13 +170,13 @@ class ProjectManager {
         let page = '';
         switch(category) {
             case 'tech':
-                page = 'tech/index.html';
+                page = 'tech';
                 break;
             case 'creative':
-                page = 'creative/index.html';
+                page = 'creative';
                 break;
             case 'article':
-                page = 'articles/index.html';
+                page = 'articles';
                 break;
         }
         window.location.href = `pages/${page}`;
