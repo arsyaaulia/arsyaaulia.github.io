@@ -1,7 +1,7 @@
 {
   "tech": [
     {
-      "id": 1,
+      "id": 3,
       "title": "PlantIt",
       "description": "Intelligent code completion and debugging assistant using machine learning that helps developers write better code faster.",
       "tags": ["Python", "TensorFlow", "FastAPI", "React"],
@@ -13,18 +13,18 @@
       "demo": ".."
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Nocturne Crumbs",
       "description": "Decentralized voting platform with transparent and secure ballot counting using Ethereum blockchain technology.",
       "tags": ["Website", "Bootstrap", "HTML", "CSS"],
-      "image": "../img/nocturn.png",
+      "image": "../img/Nocturne-Crumbs.png",
       "link": "https://arsyaaulia.github.io/Pratikum-Bootstrap/",
       "date": "2025-05",
       "featured": true,
       "github": "https://github.com/arsyaaulia/blockchain-voting"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Sertifikasi Label Maslahah",
       "description": "Solusi website dari permasalahan AI yang tidak etis ",
       "tags": ["React", "D3.js", "WebSocket", "Node.js"],
@@ -35,23 +35,13 @@
       "demo": "https://dashboard.demo.com"
     },
     {
-      "id": 4,
-      "title": "Mobile App Performance Monitor",
-      "description": "Tool for monitoring and optimizing mobile app performance metrics with real-time alerts.",
-      "tags": ["React Native", "Firebase", "GraphQL", "TypeScript"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/mobile-monitor",
-      "date": "2023-10-05",
-      "featured": false
-    },
-    {
-      "id": 5,
-      "title": "Cloud Infrastructure Manager",
-      "description": "Web-based tool for managing cloud resources across multiple providers with automated scaling.",
-      "tags": ["AWS", "Terraform", "Go", "Kubernetes"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/cloud-manager",
-      "date": "2023-09-12",
+      "id": 1,
+      "title": "Guesstimation",
+      "description": "Game sederhana untuk menebak angka acak dengan UI minimalis ",
+      "tags": ["JavaScript", "HTML", "CSS", "Game"],
+      "image": "../img/guesstimation.png",
+      "link": "https://github.com/arsyaaulia/guesstimation",
+      "date": "2026-03",
       "featured": false
     }
   ],
