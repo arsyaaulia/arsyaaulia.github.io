@@ -1,6 +1,29 @@
 {
   "tech": [
     {
+      "id": 1,
+      "title": "Guesstimation",
+      "description": "Game tebak angka berbasis web dengan sistem level dan skor, dirancang dengan pendekatan UI minimalis dan interaktif.",
+      "tags": ["JavaScript", "HTML", "CSS", "Game"],
+      "image": "../img/guesstimation.png",
+      "link": "https://github.com/arsyaaulia/guesstimation",
+      "date": "2026-03",
+      "featured": false
+    },
+
+    {
+      "id": 2,
+      "title": "Sertifikasi Label Maslahah",
+      "description": "Platform verifikasi sertifikat keislaman AI yang menjamin keutuhan sanad, bebas dehumanisasi, dan memberikan manfaat sosial tinggi (maslahah).",
+      "tags": ["HTML", "Website", "CSS"],
+      "image": "../img/Label-Maslahah.png",
+      "link": "https://arsyaaulia.github.io/sertifikasi-ai-maslahah/",
+      "date": "2026-03",
+      "featured": true,
+      "demo": "https://dashboard.demo.com"
+    },
+
+    {
       "id": 3,
       "title": "PlantIt",
       "description": "Intelligent code completion and debugging assistant using machine learning that helps developers write better code faster.",
@@ -12,38 +35,19 @@
       "github": "https://github.com/arsyaaulia/PlanIt",
       "demo": ".."
     },
+
     {
       "id": 4,
       "title": "Nocturne Crumbs",
-      "description": "Decentralized voting platform with transparent and secure ballot counting using Ethereum blockchain technology.",
+      "description": "Tampilan website ini merupakan hasil dari kelas lab mata kuliah Website Programming, di mana mahasiswa diminta untuk membuat tampilan sederhana sebagai latihan menggunakan Bootstrap.",
       "tags": ["Website", "Bootstrap", "HTML", "CSS"],
       "image": "../img/Nocturne-Crumbs.png",
       "link": "https://arsyaaulia.github.io/Pratikum-Bootstrap/",
       "date": "2025-05",
       "featured": true,
       "github": "https://github.com/arsyaaulia/blockchain-voting"
-    },
-    {
-      "id": 2,
-      "title": "Sertifikasi Label Maslahah",
-      "description": "Solusi website dari permasalahan AI yang tidak etis ",
-      "tags": ["React", "D3.js", "WebSocket", "Node.js"],
-      "image": "../img/Label-Maslahah.png",
-      "link": "https://arsyaaulia.github.io/sertifikasi-ai-maslahah/",
-      "date": "2026-03",
-      "featured": true,
-      "demo": "https://dashboard.demo.com"
-    },
-    {
-      "id": 1,
-      "title": "Guesstimation",
-      "description": "Game sederhana untuk menebak angka acak dengan UI minimalis ",
-      "tags": ["JavaScript", "HTML", "CSS", "Game"],
-      "image": "../img/guesstimation.png",
-      "link": "https://github.com/arsyaaulia/guesstimation",
-      "date": "2026-03",
-      "featured": false
     }
+    
   ],
   "creative": [
     {
