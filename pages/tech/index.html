@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tech projects portfolio - Arsya Aulia">
-    <title>Tech Projects | Arsya Aulia</title>
+    <title>Tech Projects | Arsya's Space</title>
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="../../src/output.css">
@@ -182,21 +182,12 @@
         
         function loadProjects() {
             if (projectManager) {
-                // Ambil semua project dari kategori 'tech'
                 allProjects = projectManager.getAllProjects('tech');
                 console.log('Total tech projects loaded:', allProjects.length);
-                console.log('Projects data:', allProjects);
-                
-                // Reset ke halaman pertama
-                currentPage = 1;
                 renderProjects();
-            } else {
-                console.error('ProjectManager not initialized');
-                // Retry after delay
-                setTimeout(loadProjects, 500);
             }
         }
-        
+
         function renderProjects() {
             let filteredProjects = [...allProjects];
             

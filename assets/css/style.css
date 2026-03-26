@@ -1,46 +1,46 @@
 /* ========== VARIABLES ========== */
 :root {
     /* Primary Colors */
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #818cf8;
+    --primary: #a3a3a3;
+    --primary-dark: #737373;
+    --primary-light: #d4d4d4;
     
     /* Secondary Colors */
-    --secondary: #ec489a;
-    --secondary-dark: #db2777;
-    --secondary-light: #f472b6;
+    --secondary: #888888;
+    --secondary-dark: #666666;
+    --secondary-light: #aaaaaa;
     
     /* Accent Colors */
-    --accent: #14b8a6;
-    --accent-dark: #0d9488;
-    --accent-light: #2dd4bf;
+    --accent: #cfcfcf;
+    --accent-dark: #999999;
+    --accent-light: #e5e5e5;
     
     /* Background Colors */
-    --bg-primary: #0f0f1a;
-    --bg-secondary: #1a1a2e;
-    --bg-tertiary: #16213e;
+    --bg-primary: #0e0e0e;
+    --bg-secondary: #171717;
+    --bg-tertiary: #1f1f1f;
     
     /* Text Colors */
     --text-primary: #ffffff;
-    --text-secondary: #a0a0c0;
-    --text-tertiary: #6b6b8d;
+    --text-secondary: #a3a3a3;
+    --text-tertiary: #737373;
     
-    /* Status Colors */
-    --success: #10b981;
-    --warning: #f59e0b;
+    /* Status Colors (biarin ini tetap) */
+    --success: #22c55e;
+    --warning: #facc15;
     --error: #ef4444;
     --info: #3b82f6;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+    /* Gradients (lebih subtle) */
+    --gradient-primary: linear-gradient(135deg, #e5e5e5, #a3a3a3);
     --gradient-dark: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
     
     /* Effects */
-    --glow: 0 0 20px rgba(99, 102, 241, 0.3);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --glow: 0 0 10px rgba(255, 255, 255, 0.05);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     
     /* Animations */
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.3s ease;
 }
 
 /* ========== RESET & BASE ========== */

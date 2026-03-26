@@ -101,8 +101,22 @@ class ProjectManager {
         card.className = 'project-card';
         
         let badge = '';
+        let buttonText = 'View Project →';
+        let buttonAction = '';
+        
         if (category === 'article') {
             badge = `<div class="article-badge">📖 ${project.readTime}</div>`;
+            buttonText = 'Read Article →';
+            buttonAction = `data-link="${project.link}"`;
+        } else {
+            // Untuk tech dan creative
+            if (project.hasLink && project.link) {
+                buttonText = 'View Project →';
+                buttonAction = `data-link="${project.link}" data-has-link="true"`;
+            } else {
+                buttonText = 'No Demo Available';
+                buttonAction = `data-has-link="false" disabled style="opacity:0.5; cursor:not-allowed;"`;
+            }
         }
         
         card.innerHTML = `
@@ -112,31 +126,80 @@ class ProjectManager {
             </div>
             <div class="project-info">
                 <h3 class="project-title">${this.escapeHtml(project.title)}</h3>
-                <p class="project-description">${this.escapeHtml(project.description)}</p>
+                <p class="project-description">${this.escapeHtml(project.description.substring(0, 120))}${project.description.length > 120 ? '...' : ''}</p>
                 <div class="project-tags">
                     ${project.tags.map(tag => `<span class="tag">${this.escapeHtml(tag)}</span>`).join('')}
                 </div>
                 <div class="project-footer">
                     <span class="project-date">${this.formatDate(project.date)}</span>
-                    <button class="btn-view" data-id="${project.id}" data-category="${category}">
-                        View Project →
+                    <button class="btn-view" data-id="${project.id}" data-category="${category}" ${buttonAction}>
+                        ${buttonText}
                     </button>
                 </div>
             </div>
         `;
         
-        // Add click handler for view button
+        // Handler untuk View Project button
         const viewBtn = card.querySelector('.btn-view');
-        viewBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.navigateToDetail(category, project.id);
-        });
+        if (viewBtn && !viewBtn.hasAttribute('disabled')) {
+            const hasLink = viewBtn.getAttribute('data-has-link') === 'true';
+            if (hasLink) {
+                viewBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const link = viewBtn.getAttribute('data-link');
+                    if (link) {
+                        window.open(link, '_blank');
+                        if (window.gamificationSystem) {
+                            window.gamificationSystem.addPoints(10);
+                            window.gamificationSystem.showAchievement(`Opening: ${project.title.substring(0, 30)}...`);
+                        }
+                    }
+                });
+            }
+        }
         
-        card.addEventListener('click', () => {
-            this.navigateToDetail(category, project.id);
+        // Handler untuk klik card (navigasi ke halaman artikel)
+        card.addEventListener('click', (e) => {
+            // Jangan trigger jika yang diklik adalah button
+            if (e.target.closest('.btn-view')) return;
+            
+            // Untuk tech dan creative, navigasi ke halaman artikel internal
+            if (category !== 'article') {
+                this.navigateToArticlePage(category, project);
+            } else {
+                // Untuk article, langsung ke link eksternal
+                if (project.link) {
+                    window.open(project.link, '_blank');
+                }
+            }
         });
         
         return card;
+    }
+
+    navigateToArticlePage(category, project) {
+        // Navigasi ke halaman artikel internal
+        // Contoh: pages/tech/ai-assistant/index.html
+        const articlePath = project.articlePath || `pages/${category}/${this.slugify(project.title)}/`;
+        window.location.href = `${articlePath}index.html`;
+        
+        // Simpan data project ke localStorage untuk digunakan di halaman artikel
+        localStorage.setItem('currentProject', JSON.stringify({
+            category: category,
+            project: project
+        }));
+        
+        if (window.gamificationSystem) {
+            window.gamificationSystem.addPoints(5);
+            window.gamificationSystem.showAchievement(`Reading about: ${project.title}`);
+        }
+    }
+
+    slugify(text) {
+        return text
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '');
     }
 
     escapeHtml(text) {

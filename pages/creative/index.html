@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creative projects portfolio - Arsya Aulia">
-    <title>Creative Projects | Arsya Aulia</title>
+    <title>Creative Projects | Arsya's Space</title>
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="../../src/output.css">
@@ -151,13 +151,15 @@
         let currentFilter = 'all';
         let allProjects = [];
         
+        // Di pages/tech-projects.html
         function loadProjects() {
             if (projectManager) {
-                allProjects = projectManager.getAllProjects('creative');
+                allProjects = projectManager.getAllProjects('tech');
+                console.log('Total tech projects loaded:', allProjects.length);
                 renderProjects();
             }
         }
-        
+
         function renderProjects() {
             let filteredProjects = [...allProjects];
             
@@ -167,18 +169,24 @@
                 filteredProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
             }
             
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedProjects = filteredProjects.slice(start, end);
+            
             const grid = document.getElementById('allProjectsGrid');
             grid.innerHTML = '';
             
-            if (filteredProjects.length === 0) {
+            if (paginatedProjects.length === 0) {
                 grid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No projects found.</p>';
                 return;
             }
             
-            filteredProjects.forEach(project => {
-                const card = projectManager.createProjectCard(project, 'creative');
+            paginatedProjects.forEach(project => {
+                const card = projectManager.createProjectCard(project, 'tech');
                 grid.appendChild(card);
             });
+            
+            renderPagination(filteredProjects.length);
         }
         
         document.querySelectorAll('.filter-btn').forEach(btn => {

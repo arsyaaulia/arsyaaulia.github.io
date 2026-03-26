@@ -7,6 +7,9 @@
       "tags": ["JavaScript", "HTML", "CSS", "Game"],
       "image": "../../img/Guesstimation.png",
       "link": "https://arsyaaulia.github.io/Guesstimation/",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/tech/guesstimation",
       "date": "2026-03",
       "featured": false
     },
@@ -18,9 +21,11 @@
       "tags": ["HTML", "Website", "CSS"],
       "image": "../../img/Label-Maslahah.png",
       "link": "https://arsyaaulia.github.io/sertifikasi-ai-maslahah/",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/tech/label-maslahah/",
       "date": "2026-03",
-      "featured": true,
-      "demo": "https://dashboard.demo.com"
+      "featured": true
     },
 
     {
@@ -30,10 +35,12 @@
       "tags": ["Python", "TensorFlow", "FastAPI", "React"],
       "image": "../../img/PlanIt.png",
       "link": "https://arsyaaulia.github.io/PlanIt/",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/tech/planIt/",
       "date": "2025-05",
       "featured": true,
-      "github": "https://github.com/arsyaaulia/PlanIt",
-      "demo": ".."
+      "github": "https://github.com/arsyaaulia/PlanIt"
     },
 
     {
@@ -43,6 +50,9 @@
       "tags": ["Website", "Bootstrap", "HTML", "CSS"],
       "image": "../../img/Nocturne-Crumbs.png",
       "link": "https://arsyaaulia.github.io/Pratikum-Bootstrap/",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/tech/nocturneCrumbs",
       "date": "2025-05",
       "featured": true,
       "github": "https://github.com/arsyaaulia/blockchain-voting"
@@ -53,64 +63,15 @@
     {
       "id": 1,
       "title": "Interactive Art Installation",
-      "description": "Generative art piece that responds to viewer movements and sound using computer vision and audio analysis.",
-      "tags": ["p5.js", "WebGL", "TensorFlow.js", "Creative Coding"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/interactive-art",
+      "description": "Generative art piece...",
+      "tags": ["p5.js", "WebGL"],
+      "image": "assets/img/projects/creative/interactive-art.jpg",
+      "link": "https://interactive-art.demo.com",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/creative/interactive-art/",
       "date": "2024-01-20",
-      "featured": true,
-      "demo": "https://interactive-art.demo.com"
-    },
-    {
-      "id": 2,
-      "title": "3D Audio Visualizer",
-      "description": "Immersive music visualization experience in 3D space with real-time audio frequency analysis.",
-      "tags": ["Three.js", "Web Audio API", "GLSL", "Shader"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/audio-visualizer",
-      "date": "2023-12-05",
-      "featured": true,
-      "demo": "https://visualizer.demo.com"
-    },
-    {
-      "id": 3,
-      "title": "Generative Typography",
-      "description": "Dynamic typography system that creates unique text animations based on user input and motion.",
-      "tags": ["Canvas API", "JavaScript", "Creative Coding", "Typography"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/generative-typography",
-      "date": "2023-11-15",
       "featured": true
-    },
-    {
-      "id": 4,
-      "title": "VR Gallery Experience",
-      "description": "Virtual reality art gallery with interactive exhibits and immersive 3D navigation.",
-      "tags": ["A-Frame", "WebXR", "Three.js", "VR"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/vr-gallery",
-      "date": "2023-10-25",
-      "featured": false
-    },
-    {
-      "id": 5,
-      "title": "Motion Capture Animation",
-      "description": "Real-time motion capture for 3D character animation using webcam and pose detection.",
-      "tags": ["MediaPipe", "Three.js", "WebGL", "Animation"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/motion-capture",
-      "date": "2023-09-30",
-      "featured": false
-    },
-    {
-      "id": 6,
-      "title": "Neural Style Transfer",
-      "description": "Apply artistic styles to images using neural networks in real-time with web interface.",
-      "tags": ["TensorFlow.js", "Canvas API", "AI Art", "Machine Learning"],
-      "image": "https://i.pinimg.com/736x/c2/ff/37/c2ff379305c06dd826435527f06b88a2.jpg",
-      "link": "https://github.com/arsyaaulia/style-transfer",
-      "date": "2023-08-22",
-      "featured": false
     }
   ],
   "article": [
