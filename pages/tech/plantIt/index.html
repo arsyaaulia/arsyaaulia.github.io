@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Project Detail | Arsya's Space</title>
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../../../../src/output.css">
+    <link rel="icon" href="../../../../img/Arsya.PNG" type="image/png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 100px;
+            left: 2rem;
+            background: var(--bg-secondary);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            z-index: 100;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+            background: var(--primary);
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .article-tags {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .article-content {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .article-content h2 {
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .article-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content ul, 
+        .article-content ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-content code {
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        
+        .article-content pre {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+        
+        .project-link-btn {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .project-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--glow);
+        }
+        
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 5rem 1.5rem 3rem;
+            }
+            
+            .back-button {
+                top: 80px;
+                left: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    
+    <a href="../../../index.html#projects" class="back-button">
+        <span>←</span>
+        <span>Back to Projects</span>
+    </a>
+    
+    <div class="article-container" id="articleContainer">
+        <div class="article-header">
+            <div class="category-icon-large" id="projectIcon">💻</div>
+            <h1 class="glitch-text" id="projectTitle">Loading...</h1>
+            <div class="article-tags" id="projectTags"></div>
+            <div class="project-date" id="projectDate"></div>
+        </div>
+        
+        <div class="article-content" id="projectContent">
+            <p>Loading project details...</p>
+        </div>
+        
+        <div class="project-links" id="projectLinks"></div>
+    </div>
+    
+    <!-- Achievement Popup -->
+    <div id="achievementPopup" class="achievement-popup">
+        <div class="achievement-popup-content">
+            <span class="achievement-icon">🏆</span>
+            <span class="achievement-message"></span>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/gamification.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+    <script>
+        // Load project data from localStorage
+        function loadProjectData() {
+            const saved = localStorage.getItem('currentProject');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    const project = data.project;
+                    const category = data.category;
+                    
+                    // Update page title
+                    document.title = `${project.title} | Arsya Aulia`;
+                    
+                    // Set icon based on category
+                    const iconMap = {
+                        tech: '💻',
+                        creative: '🎨',
+                        article: '📝'
+                    };
+                    document.getElementById('projectIcon').textContent = iconMap[category] || '📄';
+                    
+                    // Set title
+                    document.getElementById('projectTitle').textContent = project.title;
+                    
+                    // Set tags
+                    const tagsContainer = document.getElementById('projectTags');
+                    tagsContainer.innerHTML = project.tags.map(tag => 
+                        `<span class="tag">${escapeHtml(tag)}</span>`
+                    ).join('');
+                    
+                    // Set date
+                    document.getElementById('projectDate').textContent = formatDate(project.date);
+                    
+                    // Set content (you can customize this based on project)
+                    const content = generateProjectContent(project, category);
+                    document.getElementById('projectContent').innerHTML = content;
+                    
+                    // Set project links
+                    const linksContainer = document.getElementById('projectLinks');
+                    if (project.link && project.hasLink) {
+                        linksContainer.innerHTML = `
+                            <a href="${project.link}" target="_blank" class="project-link-btn">
+                                🚀 View Live Project
+                            </a>
+                        `;
+                    } else {
+                        linksContainer.innerHTML = `
+                            <p style="color: var(--text-tertiary);">No live demo available for this project.</p>
+                        `;
+                    }
+                    
+                } catch (e) {
+                    console.error('Error loading project data:', e);
+                    showError();
+                }
+            } else {
+                showError();
+            }
+        }
+        
+        function generateProjectContent(project, category) {
+            
+            return `
+                <h2>About This Project</h2>
+                <p>${escapeHtml(project.description)}</p>
+                
+                <h2>Technologies Used</h2>
+                <ul>
+                    ${project.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}
+                </ul>
+                
+                <h2>Development Journey</h2>
+                <p>This project was built with passion and creativity. The development process involved research, prototyping, and iterative improvements to achieve the final result.</p>
+                
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Feature 1: Description of the main feature</li>
+                    <li>Feature 2: Description of another important feature</li>
+                    <li>Feature 3: Description of additional functionality</li>
+                </ul>
+                
+                <h2>Challenges & Solutions</h2>
+                <p>During development, several challenges were encountered including technical hurdles and design decisions. These were overcome through creative problem-solving and continuous learning.</p>
+                
+                <h2>Future Improvements</h2>
+                <p>There are plans to add more features and optimizations in future versions.</p>
+            `;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        }
+        
+        function showError() {
+            document.getElementById('projectTitle').textContent = 'Project Not Found';
+            document.getElementById('projectContent').innerHTML = `
+                <p>Sorry, the project information could not be loaded.</p>
+                <p><a href="../../../index.html#projects" style="color: var(--primary);">Return to Projects</a></p>
+            `;
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjectData();
+            
+            // Add achievement
+            if (window.gamificationSystem) {
+                setTimeout(() => {
+                    window.gamificationSystem.addPoints(5);
+                    window.gamificationSystem.showAchievement('Reading project details! 📖');
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

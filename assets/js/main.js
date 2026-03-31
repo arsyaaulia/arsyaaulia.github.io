@@ -14,13 +14,15 @@ class PortfolioApp {
         this.initCoffeeCounter();
     }
 
+    // Di dalam method init() atau initParticles(), pastikan particles lebih halus
+
     initParticles() {
         const canvas = document.getElementById('particleCanvas');
         if (!canvas) return;
         
         const ctx = canvas.getContext('2d');
         let particles = [];
-        const particleCount = 50;
+        const particleCount = 25; // Kurangi jumlah
         
         function resizeCanvas() {
             canvas.width = window.innerWidth;
@@ -31,10 +33,12 @@ class PortfolioApp {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.speedY = (Math.random() - 0.5) * 0.5;
-                this.color = `hsl(${Math.random() * 60 + 240}, 70%, 60%)`;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                // Warna biru yang sangat halus
+                this.opacity = Math.random() * 0.2 + 0.05;
+                this.color = `rgba(59, 130, 246, ${this.opacity})`;
             }
             
             update() {
