@@ -179,9 +179,13 @@ class ProjectManager {
 
     navigateToArticlePage(category, project) {
         // Navigasi ke halaman artikel internal
-        // Contoh: pages/tech/ai-assistant/index.html
-        const articlePath = project.articlePath || `pages/${category}/${this.slugify(project.title)}/`;
-        window.location.href = `${articlePath}index.html`;
+        // Contoh: /pages/tech/ai-assistant/index.html
+        let articlePath = project.articlePath || `pages/${category}/${this.slugify(project.title)}/`;
+        articlePath = articlePath.replace(/^\/+/, '');
+        if (!articlePath.endsWith('/')) {
+            articlePath += '/';
+        }
+        window.location.href = `/${articlePath}index.html`;
         
         // Simpan data project ke localStorage untuk digunakan di halaman artikel
         localStorage.setItem('currentProject', JSON.stringify({
