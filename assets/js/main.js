@@ -9,7 +9,6 @@ class PortfolioApp {
         this.initTypingEffect();
         this.initNavigation();
         this.initSkills();
-        this.initScrollAnimations();
         this.initCopyEmail();
         this.initCoffeeCounter();
     }
@@ -145,50 +144,17 @@ class PortfolioApp {
                 }
             });
         });
-        
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (navbar) {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-            
-            // Update active nav link based on scroll position
-            const sections = document.querySelectorAll('section');
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
     }
 
     initSkills() {
         const skills = [
-            { name: 'React', icon: '⚛️', level: 90 },
-            { name: 'Vue.js', icon: '💚', level: 85 },
-            { name: 'Node.js', icon: '🚀', level: 88 },
+            { name: 'Canva', icon: '⚛️', level: 90 },
+            { name: 'Adobe Illustrator', icon: '💚', level: 85 },
+            { name: 'Adobe Photoshop', icon: '🚀', level: 88 },
             { name: 'Python', icon: '🐍', level: 85 },
-            { name: 'Three.js', icon: '🎨', level: 80 },
-            { name: 'Tailwind', icon: '💨', level: 95 },
+            { name: 'HTML', icon: '🎨', level: 80 },
+            { name: 'CSS', icon: '💨', level: 95 },
             { name: 'Figma', icon: '🎯', level: 90 },
-            { name: 'WebGL', icon: '🌐', level: 75 },
-            { name: 'TypeScript', icon: '📘', level: 85 },
-            { name: 'GraphQL', icon: '📊', level: 80 }
         ];
         
         const skillsContainer = document.getElementById('skillsContainer');
@@ -261,21 +227,21 @@ class PortfolioApp {
         }
     }
 
-    initCoffeeCounter() {
-        const coffeeCount = document.getElementById('coffeeCount');
-        if (coffeeCount) {
-            let count = 0;
-            const interval = setInterval(() => {
-                if (count < 1024) {
-                    count += 32;
-                    coffeeCount.textContent = count;
-                } else {
-                    coffeeCount.textContent = '1024+';
-                    clearInterval(interval);
-                }
-            }, 30);
-        }
-    }
+    // initCoffeeCounter() {
+    //     const coffeeCount = document.getElementById('coffeeCount');
+    //     if (coffeeCount) {
+    //         let count = 0;
+    //         const interval = setInterval(() => {
+    //             if (count < 1024) {
+    //                 count += 32;
+    //                 coffeeCount.textContent = count;
+    //             } else {
+    //                 coffeeCount.textContent = '1024+';
+    //                 clearInterval(interval);
+    //             }
+    //         }, 30);
+    //     }
+    // }
 }
 
 // Initialize app when DOM is loaded
