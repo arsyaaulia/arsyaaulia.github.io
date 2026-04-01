@@ -9,7 +9,7 @@
       "link": "https://arsyaaulia.github.io/Guesstimation/",
       "hasLink": true,
       "hasArticle": true,
-      "articlePath": "pages/tech/guesstimation",
+      "articlePath": "pages/tech/guesstimation/",
       "date": "2026-03",
       "featured": false
     },
@@ -40,7 +40,7 @@
       "articlePath": "pages/tech/planIt/",
       "date": "2025-05",
       "featured": true,
-      "github": "https://github.com/arsyaaulia/PlanIt"
+      "github": "https://github.com/arsyaaulia/PlanIt/"
     },
 
     {
@@ -52,7 +52,7 @@
       "link": "https://arsyaaulia.github.io/Pratikum-Bootstrap/",
       "hasLink": true,
       "hasArticle": true,
-      "articlePath": "pages/tech/nocturneCrumbs",
+      "articlePath": "pages/tech/nocturneCrumbs/",
       "date": "2025-05",
       "featured": true,
       "github": "https://github.com/arsyaaulia/blockchain-voting"
