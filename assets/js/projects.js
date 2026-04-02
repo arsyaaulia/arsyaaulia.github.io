@@ -75,13 +75,13 @@ class ProjectManager {
 
     renderHomeProjects() {
         // Render Tech Projects (first 3)
-        this.renderProjectGrid('techProjectsGrid', this.projects.tech.slice(0, 3), 'tech');
+        this.renderProjectGrid('techProjectsGrid', this.sortProjectsByDateDesc(this.projects.tech).slice(0, 3), 'tech');
         
         // Render Creative Projects (first 3)
-        this.renderProjectGrid('creativeProjectsGrid', this.projects.creative.slice(0, 3), 'creative');
+        this.renderProjectGrid('creativeProjectsGrid', this.sortProjectsByDateDesc(this.projects.creative).slice(0, 3), 'creative');
         
         // Render Articles (first 3)
-        this.renderProjectGrid('articleProjectsGrid', this.projects.article.slice(0, 3), 'article');
+        this.renderProjectGrid('articleProjectsGrid', this.sortProjectsByDateDesc(this.projects.article).slice(0, 3), 'article');
     }
 
     renderProjectGrid(gridId, projects, category) {
@@ -217,6 +217,10 @@ class ProjectManager {
         return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
     }
 
+    sortProjectsByDateDesc(projects) {
+        return [...projects].sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+
     initLoadMoreButtons() {
         const buttons = document.querySelectorAll('.btn-load-more');
         buttons.forEach(button => {
@@ -290,18 +294,8 @@ class ProjectManager {
     }
 
     getAllProjects(category) {
-        console.log('Getting all projects for category:', category);
-        console.log('Available projects:', this.projects);
-        
-        if (category === 'tech') {
-            console.log('Tech projects count:', this.projects.tech?.length);
-            return this.projects.tech || [];
-        } else if (category === 'creative') {
-            return this.projects.creative || [];
-        } else if (category === 'article') {
-            return this.projects.article || [];
-        }
-        return [];
+        const projects = this.projects[category] || [];
+        return this.sortProjectsByDateDesc(projects);
     }
 
     getProjectById(category, id) {

@@ -140,6 +140,17 @@
       "date": "2020-12-30",
       "readTime": "2 min read",
       "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Mengenal Apa itu Algoritma, Mulai dari Pengertian, Ciri-Ciri, Contoh, hingga Tips Belajarnya",
+      "description": "Pernah dengar kata algoritma di sekolah atau hanya sekedar mendengarnya dari orang lain? Tapi tidak tau apa arti dan maksud dari kata algoritma tersebut? ",
+      "tags": ["Informatika", "Tips", "Algoritma"],
+      "image": "https://www.ciputramakassar.ac.id/imt/wp-content/uploads/2026/04/apa-itu-algoritma-1.png",
+      "link": "https://www.ciputramakassar.ac.id/imt/mengenal-apa-itu-algoritma/",
+      "date": "2026-04",
+      "readTime": "5 min read",
+      "featured": false
     }
   ]
 }
