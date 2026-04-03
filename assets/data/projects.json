@@ -62,15 +62,13 @@
   "creative": [
     {
       "id": 1,
-      "title": "Interactive Art Installation",
-      "description": "Generative art piece...",
-      "tags": ["p5.js", "WebGL"],
-      "image": "assets/img/projects/creative/interactive-art.jpg",
-      "link": "https://interactive-art.demo.com",
-      "hasLink": true,
+      "title": "Desain Mockup Tumblr Aetheria",
+      "description": "Saat apa hayoo",
+      "tags": ["Adobe Illustrator", "Canva"],
+      "image": "assets/img/projects/TumblrAetheria.png",
       "hasArticle": true,
-      "articlePath": "pages/creative/interactive-art/",
-      "date": "2024-01-20",
+      "articlePath": "pages/creative/tumblraetheria/",
+      "date": "2025-02",
       "featured": true
     }
   ],

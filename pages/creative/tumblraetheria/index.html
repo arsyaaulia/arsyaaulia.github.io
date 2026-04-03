@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikasi Label Maslahah | Arsya's Space</title>
+    
+    <link rel="stylesheet" href="../../../src/output.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="icon" href="../../../img/Arsya.PNG" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Back button reusable dari CSS global -->
+    <a href="../../../index.html#projects" class="back-btn">
+        <span>←</span>
+        <span>Back to Projects</span>
+    </a>
+    
+    <div class="article-page">
+        <!-- Card pembungkus putih -->
+        <div class="article-card">
+            <h1>Desain Tumblr Aetheria</h1>
+            
+            <div class="article-tags">
+                <span>Adobe Illustrator</span> | <span>Canva</span>
+            </div>
+
+            <div class = "project-tags">
+                
+            </div>
+            
+            <h2>About This Project</h2>
+            <p>Platform verifikasi sertifikat keislaman AI yang menjamin keutuhan sanad, bebas dehumanisasi, dan memberikan manfaat sosial yang luas bagi masyarakat.</p>
+            
+            <h2>About This Project</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <div class="text-center">
+                <a href="#" class="btn-article">🚀 View Live Project</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="achievementPopup" class="achievement-popup">
+        <div class="achievement-popup-content">
+            <span class="achievement-icon">🏆</span>
+            <span class="achievement-message"></span>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/gamification.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.gamificationSystem) {
+                setTimeout(function() {
+                    window.gamificationSystem.addPoints(5);
+                    window.gamificationSystem.showAchievement('Reading project details! 📖');
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

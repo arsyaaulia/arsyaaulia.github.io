@@ -294,8 +294,18 @@ class ProjectManager {
     }
 
     getAllProjects(category) {
-        const projects = this.projects[category] || [];
-        return this.sortProjectsByDateDesc(projects);
+        console.log('Getting all projects for category:', category);
+        console.log('Available projects:', this.projects);
+        
+        if (category === 'tech') {
+            console.log('Tech projects count:', this.projects.tech?.length);
+            return this.projects.tech || [];
+        } else if (category === 'creative') {
+            return this.projects.creative || [];
+        } else if (category === 'article') {
+            return this.projects.article || [];
+        }
+        return [];
     }
 
     getProjectById(category, id) {
