@@ -56,6 +56,21 @@
       "date": "2025-05",
       "featured": true,
       "github": "https://github.com/arsyaaulia/blockchain-voting"
+    },
+
+    {
+      "id": 5,
+      "title": "Samber Gelap Island",
+      "description": "Tampilan website ini merupakan hasil dari kelas lab mata kuliah Website Programming, di mana mahasiswa diminta untuk membuat tampilan sederhana sebagai latihan menggunakan Bootstrap.",
+      "tags": ["Website", "Bootstrap", "HTML", "CSS"],
+      "image": "../../img/ListPoster/SamberGelap.png",
+      "link": "https://arsyaaulia.github.io/Pratikum-Bootstrap/",
+      "hasLink": true,
+      "hasArticle": true,
+      "articlePath": "pages/tech/sambergelapisland/",
+      "date": "2025-05",
+      "featured": true,
+      "github": "https://canva.link/nie0jmvufers6j0"
     }
     
   ],
@@ -69,6 +84,17 @@
       "hasArticle": true,
       "articlePath": "pages/creative/tumblraetheria/",
       "date": "2025-02",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Samber Gelap Island",
+      "description": "Deskripsinya disini gituu apa",
+      "tags": ["Canva"],
+      "image": "assets/img/projects/SamberGelapIsland.png",
+      "hasArticle": true,
+      "articlePath": "pages/creative/sambergelapisland/",
+      "date": "2020-02",
       "featured": true
     }
   ],
