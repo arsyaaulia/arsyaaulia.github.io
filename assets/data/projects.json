@@ -165,9 +165,9 @@
       "featured": true
     },
     {
-      "id": 7,
-      "title": "Samber Gelap Island",
-      "description": "Saat apa hayoo",
+      "id": 8,
+      "title": "Gudeg Jogja",
+      "description": "Gudeg ",
       "tags": ["Canva"],
       "image": "../../img/ListPoster/Gudeg.png",
       "link": "https://www.canva.com/your-design-link",
@@ -175,6 +175,19 @@
       "hasArticle": false,
       "articlePath": "",
       "date": "2020-02",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "Kompetisi Tari Kreasi",
+      "description": "Saat apa hayoo",
+      "tags": ["Canva"],
+      "image": "../../img/ListPoster/PenarikKeramaian.png",
+      "link": "https://www.canva.com/your-design-link",
+      "hasLink": true,  
+      "hasArticle": false,
+      "articlePath": "",
+      "date": "2025-05",
       "featured": true
     }
   ],
